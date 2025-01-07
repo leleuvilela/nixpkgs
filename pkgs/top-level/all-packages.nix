@@ -5613,8 +5613,6 @@ with pkgs;
     buildGoModule = buildGo123Module;
   };
 
-  fish = callPackage ../shells/fish { };
-
   wrapFish = callPackage ../shells/fish/wrapper.nix { };
 
   fishPlugins = recurseIntoAttrs (callPackage ../shells/fish/plugins { });
